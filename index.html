@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Americano</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script>
+        fetch("https://americano.devy.kro.kr/news/search/1")
+            .then(result => result.json())
+            .then(json => {
+				console.log(json);
+            });
+    </script>
 </head>
 <body>
-
+    <main>
+        <ul>
+            <li>
+                <dl class="card-type-1">
+                    <dt>
+                        <img src="https://img1.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202209/27/ked/20220927161907471vxvp.jpg" alt="">
+                    </dt>
+                    <dd>무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다.</dd>
+                </dl>
+                <div>
+                    <span class="favicon">
+                        <img src="//t1.daumcdn.net/top/favicon.ico" alt="favicon" />
+                    </span>
+                    <span class="author">XX 뉴스</span>
+                    <span class="sign">·</span>
+                    <span class="date">10분전</span>
+                </div>
+            </li>
+            <li>
+                <dl class="card-type-2">
+                    <dt>
+                        <img src="https://img1.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202209/27/ked/20220927161907471vxvp.jpg" alt="">
+                    </dt>
+                    <dd>무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다. 무궁화 꽃이 피었습니다.</dd>
+                </dl>
+                <div>
+                    <span class="favicon">
+                        <img src="//t1.daumcdn.net/top/favicon.ico" alt="favicon" />
+                    </span>
+                    <span class="author">XX 뉴스</span>
+                    <span class="sign">·</span>
+                    <span class="date">10분전</span>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
