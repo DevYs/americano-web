@@ -33,7 +33,7 @@ const NEWS_CARD = (cardType, image, title, link, favicon, author, date) => {
 		<li>
 			<dl class="${cardType}">
 				<dt>
-					 <a href="${link}" target="_blank"><img src="${image}" alt="${title}"></a>
+					 <a href="${link}" target="_blank"><img src="${image}" alt="${title}" onerror="this.src='${favicon}'"></a>
 				</dt>
 				<dd><a href="${link}" target="_blank">${title}</a></dd>
 			</dl>
