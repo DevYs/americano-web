@@ -33,9 +33,9 @@ const NEWS_CARD = (cardType, image, title, link, favicon, author, date) => {
 		<li>
 			<dl class="${cardType}">
 				<dt>
-					 <a href="${link}" target="_blank"><img src="${image}" alt="${title}" onerror="this.src='${favicon}'"></a>
+					 <a href="${link}"><img src="${image}" alt="${title}" onerror="this.src='${favicon}'"></a>
 				</dt>
-				<dd><a href="${link}" target="_blank">${title}</a></dd>
+				<dd><a href="${link}">${title}</a></dd>
 			</dl>
 			<div>
 				<span class="favicon ${!favicon ? "empty" : ""}">
