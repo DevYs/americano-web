@@ -59,7 +59,7 @@ const nextNews = async () => {
 	document.getElementById("loading").classList.add(".show");
 	pageNo = pageNo + 1;
 
-	const newsList = await fetch(`http://localhost:8080/news/search/${pageNo}`).then(result => {
+	const newsList = await fetch(`https://americano.devy.kro.kr/news/search/${pageNo}`).then(result => {
 		return result.json();
 	});
 
