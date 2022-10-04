@@ -13,6 +13,12 @@ window.onload = async () => {
 	});
 };
 
+const errorImage = (e, author) => {
+	e.style.display = 'none';
+	e.nextElementSibling.style.display = 'block';
+	console.log(author);
+};
+
 const measuredMonthDate = (value) => {
 	if(value < 10) {
 		return `0${value}`;
@@ -33,7 +39,10 @@ const NEWS_CARD = (cardType, image, title, link, favicon, author, date) => {
 		<li>
 			<dl class="${cardType}">
 				<dt>
-					 <a href="${link}"><img src="${image}" alt="${title}" onerror="this.src='${favicon}'"></a>
+					 <a href="${link}">
+						 <img src="${image}" alt="${title}" onerror="errorImage(this);">
+						 <p class="err-img">${author}</p>
+					 </a>
 				</dt>
 				<dd><a href="${link}">${title}</a></dd>
 			</dl>
