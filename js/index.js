@@ -41,7 +41,7 @@ const NEWS_CARD = (cardType, image, title, link, favicon, author, date) => {
 				<dt>
 					 <a href="${link}">
 						 <img src="${image}" alt="${title}" onerror="errorImage(this);">
-						 <p class="err-img">${author}</p>
+						 <span class="err-img">${author}</span>
 					 </a>
 				</dt>
 				<dd><a href="${link}">${title}</a></dd>
